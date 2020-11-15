@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALAVRAS CRUZADAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="box">
+
+            <div class="opts">
+                <div class="hint">
+                    <h2>PALAVRAS CRUZADAS</h2>
+                    <div id="errou"></div>
+
+                    <b id="Z1"> 1 - Qual o componente no computador é encarregado de fazer o processamento?</b>
+
+                    <input style="display: block;" id="RESPOSTA1">
+                    <button onclick="enter1()" id="but_1">Enter</button>
+                    <br>
+
+                    <b id="Z2"> 2 - Qual o componente no computador responsavel por realizar operações matemáticas?</b>
+
+                    <input id="RESPOSTA2">
+                    <button onclick="enter2()" id="but_2">Enter</button>
+                    <br>
+                    <b id="Z3"> 3 - Qual o nome do componente com capacidade de armazenar dados de busca na memória, também conhecido como acumuladores?</b>
+
+                    <input id="RESPOSTA3">
+                    <button onclick="enter3()" id="but_3">Enter</button>
+                    <br>
+                    <b id="Z4"> 4 - Qual o nome da memória que não armazena conteúdo permanente?</b>
+
+                    <input id="RESPOSTA4">
+                    <button onclick="enter4()" id="but_4">Enter</button>
+                    <br>
+                    <b id="Z5"> 5 - Qual o nome da memória que é apenas para leitura, com informações permanentes sem a possibilidade de alteração?</b>
+
+                    <input id="RESPOSTA5">
+                    <button onclick="enter5()" id="but_5">Enter</button>
+                    <br>
+                    <b id="Z6"> 6 - Qual o nome da memória em chip, similar a memória ROM, só que com capacidade de regravar dados na mesma?</b>
+
+                    <input id="RESPOSTA6">
+                    <button onclick="enter6()" id="but_6">Enter</button>
+                    <br>
+
+                    <b id="Z7"> 7 - Qual o nome da memória não volátil, normalmente usada em cartões de memória, pen drives, celulares etc.?</b>
+
+                    <input id="RESPOSTA7">
+                    <button onclick="enter7()" id="but_7">Enter</button>
+                    <br>
+
+                    <b id="Z8"> 8 - Qual o nome da memória que tem uma grande capacidade de armazenar informações, também conhecida como memória auxiliar?</b>
+
+                    <input id="RESPOSTA8">
+                    <button onclick="enter8()" id="but_8">Enter</button>
+                    <br>
+
+                    <b id="Z9"> 9 - Qual o componente que dá permissão para periféricos acessarem a memória RAM diretamente?</b>
+
+                    <input id="RESPOSTA9">
+                    <button onclick="enter9()" id="but_9">Enter</button>
+                    <br>
+
+                    <b id="Z10"> 10 - Qual o componente no computador que seleciona circuitos dando acesso ao CPU para periféricos e memórias, também conhecido como seleção de escravo?</b>
+
+                    <input id="RESPOSTA10">
+                    <button onclick="enter10()" id="but_10">Enter</button>
+                    <br>
+
+                    <b id="Z11"> 11 - Quem informa endereços físicos da memória para a CPU, também conhecido como barramento de endereços?</b>
+
+                    <input id="RESPOSTA11">
+                    <button onclick="enter11()" id="but_11">Enter</button>
+                    <br>
+
+                    <b id="Z12"> 12 - Quem permite interação entre os componentes do computador transmitindo informações entre eles?</b>
+
+                    <input id="RESPOSTA12">
+                    <button onclick="enter12()" id="but_12">Enter</button>
+                    <br>
+
+                    <b id="Z13"> 13 - Que tipo de CPU, fabricado pela Intel em 2009, com 4 núcleos, um cache L3 de 8MB que suporta DDR3-1333?</b>
+
+                    <input id="RESPOSTA13">
+                    <button onclick="enter13()" id="but_13">Enter</button>
+                    <br>
+                    <b id="Z14"> 14 - Que tipo de CPU, fabricado pela Intel em 2008, podendo ter entre 4 e 6 núcleos, com a capacidade de processamento maior?</b>
+
+                    <input id="RESPOSTA14">
+                    <button onclick="enter14()" id="but_14">Enter</button>
+                    <br>
+                    <b id="Z15"> 15 - Qual o nome de processadores com 2 núcleos?</b>
+
+                    <input id="RESPOSTA15">
+                    <button onclick="enter15()" id="but_15">Enter</button>
+                    <br>
+                    <b id="Z16"> 16 - Qual o nome de processadores com 4 núcleos?</b>
+
+                    <input id="RESPOSTA16">
+                    <button onclick="enter16()" id="but_16">Enter</button>
+                    <br>
+
+
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>2</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>7</div>
+                    <div id="A15">_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>1</div>
+                    <div id="B8" >_</div>
+                    <div id="B9" >_</div>
+                    <div id="B10" >_</div>
+                    <div></div>
+                    <div>5</div>
+                    <div></div>
+                    <div></div>
+                    <div id="B15" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>6</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="C10" >_</div>
+                    <div></div>
+                    <div id="C12" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div id="C15" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div>3</div>
+                    <div id="D3" >_</div>
+                    <div id="D4" >_</div>
+                    <div id="D5" >_</div>
+                    <div id="D6" >_</div>
+                    <div id="D7" >_</div>
+                    <div id="D8" >_</div>
+                    <div id="D9" >_</div>
+                    <div id="D10" >_</div>
+                    <div id="D11" >_</div>
+                    <div id="D12" >_</div>
+                    <div id="D13" >_</div>
+                    <div id="D14" >_</div>
+                    <div id="D15" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="E4" >_</div>
+                    <div></div>
+                    <div id="E6" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="E12" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div id="E15" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="F4" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>12</div>
+                    <div></div>
+                    <div></div>
+                    <div>4</div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="G4" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="G16" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div id="G19" >_</div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div>8</div>
+                    <div id="H4" >_</div>
+                    <div id="H5" >_</div>
+                    <div id="H6" >_</div>
+                    <div id="H7" >_</div>
+                    <div id="H8" >_</div>
+                    <div id="H9" >_</div>
+                    <div id="H10" >_</div>
+                    <div >-</div>
+                    <div id="H12" >_</div>
+                    <div id="H13" >_</div>
+                    <div >-</div>
+                    <div id="H15" >_</div>
+                    <div id="H16" >_</div>
+                    <div id="H17" >_</div>
+                    <div id="H18" >_</div>
+                    <div id="H19" >_</div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="I9" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="I16" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div id="I19" >_</div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="J16" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>15</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div >-</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>9-</div>
+                    <div id="L7" >_</div>
+                    <div id="L8" >_</div>
+                    <div id="L9" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div>10</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="L16" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="M7" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="M12" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="M16" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>11</div>
+                    <div id="N7" >_</div>
+                    <div id="N8" >_</div>
+                    <div id="N9" >_</div>
+                    <div id="N10" >_</div>
+                    <div id="N11" >_</div>
+                    <div id="N12" >_</div>
+                    <div >-</div>
+                    <div id="N14" >_</div>
+                    <div id="N15" >_</div>
+                    <div id="N16" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="O7" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div >-</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div>16</div>
+                    <div id="Q2" >_</div>
+                    <div id="Q3" >_</div>
+                    <div id="Q4" >_</div>
+                    <div id="Q5" >_</div>
+                    <div >-</div>
+                    <div id="Q7" >_</div>
+                    <div id="Q8" >_</div>
+                    <div id="Q9" >_</div>
+                    <div id="Q10" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="R7" >_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="S7">_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="row">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div id="T7">_</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
+<script>
+    function enter1() {
+        var R1 = (RESPOSTA1.value.toUpperCase());
+
+
+        if (R1 == "CPU") {
+            B8.innerHTML = "C";
+            B9.innerHTML = "P";
+            B10.innerHTML = "U";
+            Z1.innerHTML = `<b style="color: forestgreen;">1-CPU</b>`;
+            RESPOSTA1.style.display = 'none';
+            but_1.style.display = 'none'
+            errou.innerHTML = "";
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter2() {
+        var R2 = (RESPOSTA2.value.toUpperCase());
+
+
+        if (R2 == "ULA") {
+            B10.innerHTML = "U";
+            C10.innerHTML = "L";
+            D10.innerHTML = "A";
+            Z2.innerHTML = `<b style="color: forestgreen;">2-ULA</b>`;
+            RESPOSTA2.style.display = 'none';
+            but_2.style.display = 'none'
+            errou.innerHTML = ""
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter3() {
+        var R3 = (RESPOSTA3.value.toUpperCase());
+
+
+        if (R3 == "REGISTRADORES") {
+            D3.innerHTML = "R";
+            D4.innerHTML = "E";
+            D5.innerHTML = "G";
+            D6.innerHTML = "I";
+            D7.innerHTML = "S";
+            D8.innerHTML = "T";
+            D9.innerHTML = "R";
+            D10.innerHTML = "A";
+            D11.innerHTML = "D";
+            D12.innerHTML = "O";
+            D13.innerHTML = "R";
+            D14.innerHTML = "E";
+            D15.innerHTML = "S";
+            Z3.innerHTML = `<b style="color: forestgreen;">3-REGISTRADORES</b>`;
+            RESPOSTA3.style.display = 'none';
+            but_3.style.display = 'none'
+            errou.innerHTML = " ";
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter4() {
+        var R4 = (RESPOSTA4.value.toUpperCase());
+
+
+        if (R4 == "RAM") {
+            G19.innerHTML = "R";
+            H19.innerHTML = "A";
+            I19.innerHTML = "M";
+            Z4.innerHTML = `<b style="color: forestgreen;">4-RAM</b>`;
+            RESPOSTA4.style.display = 'none';
+            but_4.style.display = 'none'
+            errou.innerHTML = " ";
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter5() {
+        var R5 = (RESPOSTA5.value.toUpperCase());
+
+
+        if (R5 == "ROM") {
+            C12.innerHTML = "R";
+            D12.innerHTML = "O";
+            E12.innerHTML = "M";
+            Z5.innerHTML = `<b style="color: forestgreen;">5-ROM</b>`;
+            RESPOSTA5.style.display = 'none';
+            but_5.style.display = 'none'
+            errou.innerHTML = "";
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter6() {
+        var R6 = (RESPOSTA6.value.toUpperCase());
+
+
+        if (R6 == "EPROM") {
+            D4.innerHTML = "E";
+            E4.innerHTML = "P";
+            F4.innerHTML = "R";
+            G4.innerHTML = "O";
+            H4.innerHTML = "M";
+            Z6.innerHTML = `<b style="color: forestgreen;">6-EPROM</b>`;
+            RESPOSTA6.style.display = 'none';
+            but_6.style.display = 'none'
+            errou.innerHTML = "";
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter7() {
+        var R7 = (RESPOSTA7.value.toUpperCase());
+
+
+        if (R7 == "FLASH") {
+            A15.innerHTML = "F";
+            B15.innerHTML = "L";
+            C15.innerHTML = "A";
+            D15.innerHTML = "S";
+            E15.innerHTML = "H";
+            Z7.innerHTML = `<b style="color: forestgreen;">7-FLASH</b>`;
+            RESPOSTA7.style.display = 'none';
+            but_7.style.display = 'none'
+            errou.innerHTML = "";
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter8() {
+        var R8 = (RESPOSTA8.value.toUpperCase());
+
+
+        if (R8 == "MEMÓRIA DE MASSA") {
+            H4.innerHTML = "M";
+            H5.innerHTML = "E";
+            H6.innerHTML = "M";
+            H7.innerHTML = "Ó";
+            H8.innerHTML = "R";
+            H9.innerHTML = "I";
+            H10.innerHTML = "A";
+            H12.innerHTML = "D";
+            H13.innerHTML = "E";
+            H15.innerHTML = "M";
+            H16.innerHTML = "A";
+            H17.innerHTML = "S";
+            H18.innerHTML = "S";
+            H19.innerHTML = "A";
+            Z8.innerHTML = `<b style="color: forestgreen;">8-MEMÓRIA DE MASSA</b>`;
+            RESPOSTA8.style.display = 'none';
+            but_8.style.display = 'none'
+            errou.innerHTML = ``;
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter9() {
+        var R9 = (RESPOSTA9.value.toUpperCase());
+
+
+        if (R9 == "DMA") {
+            L7.innerHTML = "D";
+            L8.innerHTML = "M";
+            L9.innerHTML = "A";
+            Z9.innerHTML = `<b style="color: forestgreen;">9-DMA</b>`;
+            RESPOSTA9.style.display = 'none';
+            but_9.style.display = 'none'
+            errou.innerHTML = ``;
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter10() {
+        var R10 = (RESPOSTA10.value.toUpperCase());
+
+
+        if (R10 == "CS") {
+            M12.innerHTML = "C";
+            N12.innerHTML = "S";
+            Z10.innerHTML = `<b style="color: forestgreen;">10-CS</b>`;
+            RESPOSTA10.style.display = 'none';
+            but_10.style.display = 'none'
+            errou.innerHTML = ``;
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter11() {
+        var R11 = (RESPOSTA11.value.toUpperCase());
+
+
+        if (R11 == "ADRESS BUS") {
+            N7.innerHTML = "A";
+            N8.innerHTML = "D";
+            N9.innerHTML = "R";
+            N10.innerHTML = "E";
+            N11.innerHTML = "S";
+            N12.innerHTML = "S";
+            N14.innerHTML = "B";
+            N15.innerHTML = "U";
+            N16.innerHTML = "S";
+            Z11.innerHTML = `<b style="color: forestgreen;">11-ADRESS BUS</b>`;
+            RESPOSTA11.style.display = 'none';
+            but_11.style.display = 'none'
+            errou.innerHTML = ``;
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter12() {
+        var R12 = (RESPOSTA12.value.toUpperCase());
+
+
+        if (R12 == "DATA BUS") {
+            G16.innerHTML = "D";
+            H16.innerHTML = "A";
+            I16.innerHTML = "T";
+            J16.innerHTML = "A";
+            L16.innerHTML = "B";
+            M16.innerHTML = "U";
+            N16.innerHTML = "S";
+            Z12.innerHTML = `<b style="color: forestgreen;">12-DATA BUS</b>`;
+            RESPOSTA12.style.display = 'none';
+            but_12.style.display = 'none'
+            errou.innerHTML = ``;
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter13() {
+        var R13 = (RESPOSTA13.value.toUpperCase());
+
+
+        if (R13 == "I5") {
+            H9.innerHTML = "I";
+            I9.innerHTML = "5";
+            Z13.innerHTML = `<b style="color: forestgreen;">13-I5</b>`;
+            RESPOSTA13.style.display = 'none';
+            but_13.style.display = 'none'
+            errou.innerHTML = ``;
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter14() {
+        var R14 = (RESPOSTA14.value.toUpperCase());
+
+
+        if (R14 == "I7") {
+            D6.innerHTML = "I";
+            E6.innerHTML = "7";
+            Z14.innerHTML = `<b style="color: forestgreen;">14-I7</b>`;
+            RESPOSTA14.style.display = 'none';
+            but_174.style.display = 'none'
+            errou.innerHTML = ``;
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter15() {
+        var R15 = (RESPOSTA15.value.toUpperCase());
+
+
+        if (R15 == "DUAL CORE") {
+            L7.innerHTML = "D";
+            M7.innerHTML = "U";
+            N7.innerHTML = "A";
+            O7.innerHTML = "L";
+            Q7.innerHTML = "C";
+            R7.innerHTML = "O";
+            S7.innerHTML = "R";
+            T7.innerHTML = "E";
+            Z15.innerHTML = `<b style="color: forestgreen;">15-DUAL CORE</b>`;
+            RESPOSTA15.style.display = 'none';
+            but_15.style.display = 'none'
+            errou.innerHTML = ``;
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+
+    function enter16() {
+        var R16 = (RESPOSTA16.value.toUpperCase());
+
+
+        if (R16 == "QUAD CORE") {
+            Q2.innerHTML = "Q";
+            Q3.innerHTML = "U";
+            Q4.innerHTML = "A";
+            Q5.innerHTML = "D";
+            Q7.innerHTML = "C";
+            Q8.innerHTML = "O";
+            Q9.innerHTML = "R";
+            Q10.innerHTML = "E";
+            Z16.innerHTML = `<b style="color: forestgreen;">16-QUAD CORE</b>`;
+            RESPOSTA16.style.display = 'none';
+            but_16.style.display = 'none'
+            errou.innerHTML = ``;
+        } else {
+            errou.innerHTML = `<b style="color: red;">Você errou, tente novamente.</b>`;
+        }
+    }
+</script>
